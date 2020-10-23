@@ -20,6 +20,8 @@ if ($method == "GET") {
         $register->verify_account($post);
     }
     
+}else {
+    echo json_encode(array("result"=>"failed", "msg"=>"method not allowed!"));
 }
 
 ?>

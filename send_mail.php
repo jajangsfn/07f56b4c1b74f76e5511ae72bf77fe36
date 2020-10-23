@@ -30,16 +30,16 @@ if($method == "GET") {
     $qry = new Koneksi();
 
     if (!isset($post['to'])) {
-        echo json_encode(array("msg"=>"Please fill to parameter"));
+        echo json_encode(array("result"=>"failed","msg"=>"Please fill to parameter"));
     }else if (!isset($post['msg'])) {
-        echo json_encode(array("msg"=>"Please fill message parameter"));
+        echo json_encode(array("result"=>"failed","msg"=>"Please fill message parameter"));
     }else {
         //send mail
         $email = new Mail($post['to'], $post['msg']);
         $email->send_mail();
 
-        $arr['to'] = $post['to'];
-        $arr['msg'] =  $post['msg'];
+        $arr['to']      = $post['to'];
+        $arr['msg']     =  $post['msg'];
         $arr['user_id'] = $_SESSION['user_id'];
         $qry->insert_data($arr);
     }

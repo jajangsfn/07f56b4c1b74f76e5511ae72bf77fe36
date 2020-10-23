@@ -11,6 +11,8 @@ if ($method == "GET") {
     $post = $_POST;
     $register = new Register();
     $register->register($post);
+}else {
+    echo json_encode(array("result"=>"failed", "msg"=>"method not allowed!"));
 }
 
 ?>

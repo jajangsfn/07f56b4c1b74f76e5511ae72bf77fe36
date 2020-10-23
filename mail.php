@@ -70,10 +70,10 @@ class Mail {
         if (!$mail->send()) {
             echo json_encode(array(
                             "msg"=>'Mailer Error: ' . $mail->ErrorInfo,
-                            "result"=>false)
+                            "result"=>"failed")
                         );
         } else {
-            echo json_encode(array("msg"=>'Message sent!',"result"=>true));
+            echo json_encode(array("msg"=>'Message sent!',"result"=>"success"));
         }
     }
 }
