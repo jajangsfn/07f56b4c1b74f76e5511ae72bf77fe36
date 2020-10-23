@@ -1,7 +1,7 @@
 # odeo
 Odeo Technologies Task
 
-REST API send mail adalah API yg dibuat untuk memenuhi tes programming Odeo Technologies
+REST API send mail adalah API untuk kirim email yg dibuat untuk memenuhi tes programming Odeo Technologies
 
 # Spesifikasi :
 1. Menggunakan Bahasa Pemrograman PHP
