@@ -1,0 +1,16 @@
+{
+    "name": "pastisukses/odeo",
+    "description": "Test" ,
+    "authors": [
+        {
+            "name": "Sofian",
+            "email": "sofian.informatika@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "~6.1",
+        "firebase/php-jwt": "^5.2",
+        "bshaffer/oauth2-server-php": "dev-develop"
+        
+    }
+}
